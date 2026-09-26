@@ -1,25 +1,25 @@
-# Spaghetti eetdag — statische website
+# [PLOEGNAAM] — team website
 
-Vervang in `index.html`:
+Algemene statische website voor jullie 1000 km-ploeg.
+
+## Pagina's
+- `index.html` — algemene homepage
+- `wie-zijn-we.html` — teamleden
+- `evenementen.html` — alle events, met de spaghetti eetdag als eerste event
+
+## Nog aanpassen
+Zoek in de HTML naar:
 - `[PLOEGNAAM]`
-- jullie e-mailadres
-- Instagram-link
-- link naar jullie Kom op tegen Kanker-actiepagina
-- eventuele reservatie-info
+- `[NAAM 1]` t/m `[NAAM 16]`
+- `[ROL / FUNCTIE]`
+- `[Korte bio...]`
+- e-mail / Instagram / actiepagina
 
-## Lokaal bekijken
-
-Zonder Docker:
-```bash
-python3 -m http.server 8080
-```
-Open daarna http://localhost:8080
-
-## Met Docker + Nginx
+## Docker
 
 ```bash
-docker build -t spaghetti-site .
-docker run --rm -p 8080:80 spaghetti-site
+docker build -t ploeg-site .
+docker run --rm -p 8080:80 ploeg-site
 ```
 
-Open daarna http://localhost:8080
+Open http://localhost:8080
