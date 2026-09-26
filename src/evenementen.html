@@ -7,16 +7,7 @@
     <link rel="stylesheet" href="/styles.css" />
   </head>
   <body>
-    <header class="site-header">
-      <nav class="nav container">
-        <a class="brand" href="index.html">Ploeg Positief</a>
-        <div class="nav-links">
-          <a href="wie-zijn-we.html">Wie zijn we?</a>
-          <a class="active" href="evenementen.html">Evenementen</a>
-          <a class="nav-cta" href="#spaghetti">Spaghetti eetdag</a>
-        </div>
-      </nav>
-    </header>
+    {% include "header.html" %}
 
     <main>
       <section class="page-hero yellow-section">
@@ -35,7 +26,7 @@
           <article class="featured-event" id="spaghetti">
             <div class="event-image">
               <img
-                src="assets/poster.jpg"
+                src="/assets/spaghetti-poster.jpg"
                 alt="Poster van de spaghetti eetdag"
               />
             </div>

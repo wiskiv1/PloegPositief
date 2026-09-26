@@ -83,7 +83,7 @@ a {
       rgba(20, 38, 31, 0.7),
       rgba(20, 38, 31, 0.35)
     ),
-    url("assets/poster.jpg") center 28% / cover;
+    url("/assets/spaghetti-poster.jpg") center 28% / cover;
 }
 .hero-home-inner {
   min-height: 650px;
