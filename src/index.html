@@ -8,18 +8,16 @@
       content="Ploeg Positief — een ploeg voor de 1000 km van Kom op tegen Kanker."
     />
     <title>Ploeg Positief</title>
-    <link rel="stylesheet" href="/src/styles.css" />
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <header class="site-header">
       <nav class="nav container">
-        <a class="brand" href="index.html">Ploeg Positief</a>
+        <a class="brand" href="index">Ploeg Positief</a>
         <div class="nav-links">
-          <a href="wie-zijn-we.html">Wie zijn we?</a>
-          <a href="evenementen.html">Evenementen</a>
-          <a class="nav-cta" href="evenementen.html#spaghetti"
-            >Spaghetti eetdag</a
-          >
+          <a href="wie-zijn-we">Wie zijn we?</a>
+          <a href="evenementen">Evenementen</a>
+          <a class="nav-cta" href="evenementen#spaghetti">Spaghetti eetdag</a>
         </div>
       </nav>
     </header>
@@ -140,6 +138,6 @@
       </section>
     </main>
 
-    <!--#include virtual="/lib/footer.html" -->
+    {% include "footer.html" %}
   </body>
 </html>
